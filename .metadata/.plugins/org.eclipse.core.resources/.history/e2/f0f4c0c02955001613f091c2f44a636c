@@ -1,0 +1,15 @@
+package myJavaApp;
+
+import java.util.Scanner;
+
+public class RunFinal {
+
+	public static void main(String[] args) {
+		FinalVariable unchangeable = new FinalVariable();
+		System.out.println("When you set a variable as final it's value will always stay the same");
+		Scanner sc = new Scanner (System.in);
+		System.out.println(unchangeable.num1 + "is a number i set to a final variable, \nthe system will not let me change the value of it ");
+		
+	}
+
+}

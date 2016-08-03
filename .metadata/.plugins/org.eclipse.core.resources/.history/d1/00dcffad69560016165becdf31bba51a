@@ -1,0 +1,13 @@
+package practice;
+
+public class pratice {
+
+	public static void main(String[] args) {
+		int num = 1;
+		do{
+			System.out.println("Sohan Mahmud");
+			
+	} while (num>1); 
+
+}
+}

@@ -1,0 +1,9 @@
+package fortuneTeller;
+
+public abstract class TypeChoice {
+	String choice;
+	
+	
+	
+}
+

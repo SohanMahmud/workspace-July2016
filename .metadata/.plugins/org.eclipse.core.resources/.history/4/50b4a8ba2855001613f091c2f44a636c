@@ -1,0 +1,10 @@
+package myJavaApp;
+
+public class RunFinal {
+
+	public static void main(String[] args) {
+		FinalVariable unchangeable = new FinalVariable();
+		System.out.println(unchangeable.num1);
+	}
+
+}

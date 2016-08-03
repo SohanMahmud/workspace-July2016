@@ -1,0 +1,9 @@
+package fortuneTeller;
+
+public interface FortuneTellerInterface {
+
+	//a user will be able to pick a type of fortune teller
+	public void FortuneType();
+
+	
+}

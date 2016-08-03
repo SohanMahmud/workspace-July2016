@@ -1,0 +1,10 @@
+package fortuneTeller;
+
+public abstract class TypeChoice {
+	String choice;
+	public void pickFortuneType() {
+		System.out.println("Enter the name of the fortune teller type you would like to use and press enter: Job, Love, Family, or Java");
+	}
+	
+	
+}

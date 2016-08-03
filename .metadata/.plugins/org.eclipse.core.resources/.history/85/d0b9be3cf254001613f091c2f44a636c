@@ -1,0 +1,23 @@
+package fortuneTeller;
+
+import java.util.Scanner;
+
+public class ConcreteTypeChoice extends TypeChoice implements FortuneTellerInterface{
+	
+	Scanner sc2 = new Scanner (System.in);
+	boolean u = true;
+	String access = " ";
+//from Fortune Teller interface	
+	public void FortuneType() {
+		
+while (u == true) {	
+		this.access=access;
+		System.out.println("would you like to use the fortune teller?   yes/no "); 
+		String access = sc2.nextLine().toLowerCase();
+		if (access.equals("yes")){System.out.println("Accessing fortune teller");break;}
+		else if (access.equals("no")){System.out.println("Returning to main menu");}
+}	
+	}
+
+
+}

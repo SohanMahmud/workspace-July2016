@@ -1,0 +1,8 @@
+package fortuneTeller;
+
+public abstract class TypeChoice {
+	
+	
+	
+}
+

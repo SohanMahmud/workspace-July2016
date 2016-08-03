@@ -1,0 +1,20 @@
+package fortuneTeller;
+
+
+public class RunCalc {
+
+	public static void main(String[] args) {
+		Calculator value = new Calculator();
+		int total1 = value.addTwoInt(a, b);
+		System.out.println(total1);
+		int total2 = value.subtractTwoInt(a, b)
+		System.out.println("Area Of Land Calculator measurement: " + total2);
+		int total3 = size.calculateLandSize(10, 10, 10,10);
+		System.out.println(total3);
+		
+		ModernCalculator mc = new ModernCalculator();
+		int total4 = mc.calculateLandSize(10, 15, 9);
+		System.out.println("Modern Calculator measurement: " + total4);
+	}
+
+}

@@ -1,0 +1,17 @@
+package myJavaApp;
+
+import java.util.Scanner;
+
+public class ListNumbers {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner (System.in);
+		System.out.println("Enter an integer number to start with, then enter a condition and finally enter a limit. ");
+		for(int i = sc.nextInt(); i>=sc.nextInt() && i<=sc.nextInt(); i = i++){
+			System.out.println(i++);
+		
+		
+			}
+	}
+
+}

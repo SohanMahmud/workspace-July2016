@@ -1,0 +1,24 @@
+package fortuneTeller;
+
+import java.util.Scanner;
+
+public class ConcreteTypeChoice extends TypeChoice implements FortuneTellerInterface{
+	
+	Scanner sc2 = new Scanner (System.in);
+	boolean u = true;
+	
+//from Fortune Teller interface	
+	public void MenuSelect() {
+		
+while (u == true) {	
+		
+		System.out.println("Select an option from the main menu: /n fortune teller,  calculator, database "); 
+		String access = sc2.nextLine().toLowerCase();
+		if (access.equals("fortune teller")){System.out.println("Accessing fortune teller");break;}
+		else if (access.equals("calculator")){System.out.println("Accessing calculator");}
+		else if (access.equals("database")){System.out.println("Accessing database");}
+}	
+	}
+
+
+}

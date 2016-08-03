@@ -1,0 +1,14 @@
+package practice;
+
+public class pratice {
+
+	public static void main(String[] args) {
+		int i = 101;
+		
+		while (i<=100 && i>1) {
+			
+			i--; {System.out.println(i);}
+	}
+
+}
+}

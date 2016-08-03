@@ -1,0 +1,12 @@
+package practice;
+
+public class pratice {
+
+	public static void main(String[] args) {
+		int v =20;
+		v--;
+		v++;
+		System.out.println(v++);
+	}
+
+}

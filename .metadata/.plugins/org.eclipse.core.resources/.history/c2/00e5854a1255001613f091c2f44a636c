@@ -1,0 +1,5 @@
+package fortuneTeller;
+
+public class Calculator2 extends Calculator{
+
+}

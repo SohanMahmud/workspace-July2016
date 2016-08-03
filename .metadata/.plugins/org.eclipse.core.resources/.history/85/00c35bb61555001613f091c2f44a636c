@@ -1,0 +1,21 @@
+package myJavaApp;
+
+import java.util.Scanner;
+
+public class Exceptions {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner (System.in);
+		int number =sc.nextInt();
+		try {
+		int result = number/2;
+		System.out.println(result);
+		
+			}
+		catch(Exception ex){
+		System.out.println("You cannot divide a number by zero");
+		}
+	}
+	}
+
+

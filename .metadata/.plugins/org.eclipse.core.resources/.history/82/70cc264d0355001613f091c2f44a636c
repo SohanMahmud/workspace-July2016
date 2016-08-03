@@ -1,0 +1,92 @@
+package fortuneTeller;
+
+import java.util.Scanner;
+
+public class TestFortuneTeller extends ConcreteTypeChoice {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner (System.in);
+		ConcreteTypeChoice CTC = new ConcreteTypeChoice();
+		boolean a = true;
+		boolean b = true;
+		boolean c = true;
+		boolean outerloop = true;
+		String str = " ";
+		String yf = "Your fortune: ";
+
+		
+Database.main(args);	
+
+while (outerloop == true) {
+		CTC.MenuSelect();
+		
+		while (a == true) {		
+	
+		System.out.println("Pick a fortune teller type, choose from: job, love, family or java ");
+		
+		str = sc.nextLine().toLowerCase();
+		
+		if (str.equals("job")){System.out.println("you picked job");break;} 
+		else if (str.equals("love")){System.out.println("you picked love");break;} 
+		else if (str.equals("family")){System.out.println("you picked family");break;}
+		else if (str.equals("java")) {System.out.println("you picked java");break;}		
+		else {System.out.println("that is an inccorect choice, try again");}	
+}
+	
+while (b == true) {
+	System.out.println("pick a color from: red, blue, yellow, green");	
+	String color = sc.nextLine().toLowerCase();
+	System.out.println("You have chosen:" + color);
+
+	if (color.equals("red")){System.out.println("pick a number from: 1 or 3");break;}
+	else if (color.equals("blue")){System.out.println("pick a number from: 5 or 7");break;}
+	else if (color.equals("yellow")){System.out.println("pick a number from: 2 or 4");break;}
+	else if (color.equals("green")){System.out.println("pick a number from: 6 or 8");break;}
+	else {System.out.println("that is an inccorect choice, try again");}
+}	
+while (c == true) {
+	String number = sc.nextLine();
+	if (number.equals("1") && str.equals("job")){System.out.println(yf + "you will get a new job soon");break;}
+	else if (number.equals("3") && str.equals("job")) {System.out.println(yf + "you will get a promotion");break;}
+	else if (number.equals("5") && str.equals("job")) {System.out.println(yf + "you are getting fired soon");break;}
+	else if (number.equals("7") && str.equals("job")) {System.out.println(yf + "you will get a raise");break;}
+	else if (number.equals("2") && str.equals("job")) {System.out.println(yf + "you will need to relocate for your new job");break;}
+	else if (number.equals("4") && str.equals("job")) {System.out.println(yf + "you will work somewhere you don't like");break;}
+	else if (number.equals("6") && str.equals("job")) {System.out.println(yf + "your co-workers will like you at your new job");break;}
+	else if (number.equals("8") && str.equals("job")) {System.out.println(yf + "you will have a lot of trouble at work");break;}
+	else if (number.equals("1") && str.equals("love")){System.out.println(yf + "you will be in love with someone new soon");break;}
+	else if (number.equals("3") && str.equals("love")) {System.out.println(yf + "you will get married to the one you love");break;}
+	else if (number.equals("5") && str.equals("love")) {System.out.println(yf + "your significant other is seeing someone else");break;}
+	else if (number.equals("7") && str.equals("love")) {System.out.println(yf + "there is going to be trouble in paradise very soon");break;}
+	else if (number.equals("2") && str.equals("love")) {System.out.println(yf + "you will be single for a year");break;}
+	else if (number.equals("4") && str.equals("love")) {System.out.println(yf + "you will find yourself in a love triangle");break;}
+	else if (number.equals("6") && str.equals("love")) {System.out.println(yf + "you need to learn to love yourself before you can find love with someone else");break;}
+	else if (number.equals("8") && str.equals("love")) {System.out.println(yf + "you will fall in love with someone who doesn't love you");break;}
+	else if (number.equals("1") && str.equals("family")){System.out.println(yf + "your long lost uncle will return soon");break;}
+	else if (number.equals("3") && str.equals("family")) {System.out.println(yf + "you can expect to have a new baby within the year");break;}
+	else if (number.equals("5") && str.equals("family")) {System.out.println(yf + "your parents may get a divorce soon");break;}
+	else if (number.equals("7") && str.equals("family")) {System.out.println(yf + "someone in your family will get married soon");break;}
+	else if (number.equals("2") && str.equals("family")) {System.out.println(yf + "your family will have a get-together next week");break;}
+	else if (number.equals("4") && str.equals("family")) {System.out.println(yf + "your family will move to a new house soon");break;}
+	else if (number.equals("6") && str.equals("family")) {System.out.println(yf + "a family member will be displeased with you soon");break;}
+	else if (number.equals("8") && str.equals("family")) {System.out.println(yf + "your family will be proud of you about something soon");break;}
+	else if (number.equals("1") && str.equals("java")){System.out.println(yf + "you will pass with the course with flying colors");break;}
+	else if (number.equals("3") && str.equals("java")) {System.out.println(yf + "you can expect to find a job right away");break;}
+	else if (number.equals("5") && str.equals("java")) {System.out.println(yf + "you will need to repeat the class");break;}
+	else if (number.equals("7") && str.equals("java")) {System.out.println(yf + "you will not learn anything about java");break;}
+	else if (number.equals("2") && str.equals("java")) {System.out.println(yf + "you will never finish your codelab homework");break;}
+	else if (number.equals("4") && str.equals("java")) {System.out.println(yf + "you will become a java developer after becoming a software tester");break;}
+	else if (number.equals("6") && str.equals("java")) {System.out.println(yf + "you will become the next steve jobs");break;}
+	else if (number.equals("8") && str.equals("java")) {System.out.println(yf + "you will make 200k starting salary");break;}
+	else {System.out.println("that is an inccorect choice, try again");}	
+}	
+	
+}
+}
+
+	
+	
+}
+
+

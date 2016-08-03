@@ -1,0 +1,54 @@
+package fortuneTeller;
+
+import java.util.Scanner;
+
+public class TestFortuneTeller {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner (System.in);
+		ConcreteTypeChoice CTC = new ConcreteTypeChoice();
+		boolean a = true;
+		boolean b = true;
+		boolean c = true;
+		
+		
+while (a == true) {		
+	
+		System.out.println("pick a fortune teller type");
+	
+		String str = sc.nextLine();
+	
+		if (str.equals("job")){System.out.println("you picked job");break;} 
+		else if (str.equals("love")){System.out.println("you picked love");break;} 
+		else if (str.equals("family")){System.out.println("you picked family");break;}
+		else if (str.equals("java")) {System.out.println("you picked java");break;}		
+		else {System.out.println("that is an inccorect choice, try again");}	
+}
+	
+while (b == true) {
+	System.out.println("pick a color from: red, blue, yellow, green");	
+	String color = sc.nextLine();
+	System.out.println("You have chosen:" + color);
+
+	if (color.equals("red")){System.out.println("pick a number from: 1, 3, 5, 7");break;}
+	else if (color.equals("blue")){System.out.println("pick a number from: 1, 3, 5, 7");break;}
+	else if (color.equals("yellow")){System.out.println("pick a number from: 2, 4, 6, 8");break;}
+	else if (color.equals("green")){System.out.println("pick a number from: 2, 4, 6, 8");break;}
+	else {System.out.println("that is an inccorect choice, try again");}
+}	
+while (c == true) {
+	String number = sc.nextLine();
+	if (number.equals("1")) {System.out.println("you have picked: " + number);break;}
+	else if (number.equals("3")) {System.out.println("you have picked: " + number);break;}
+	else if (number.equals("5")) {System.out.println("you have picked: " + number);break;}
+	else if (number.equals("7")) {System.out.println("you have picked: " + number);break;}
+
+	else if (number.equals("2")) {System.out.println("you have picked: " + number);break;}
+	else if (number.equals("4")) {System.out.println("you have picked: " + number);break;}
+	else if (number.equals("6")) {System.out.println("you have picked: " + number);break;}
+	else if (number.equals("8")) {System.out.println("you have picked: " + number);break;}
+	else {System.out.println("that is an inccorect choice, try again");}	
+}	
+}
+}

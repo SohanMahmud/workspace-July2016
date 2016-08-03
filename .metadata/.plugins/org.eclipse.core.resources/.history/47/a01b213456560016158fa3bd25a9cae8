@@ -1,0 +1,11 @@
+package practice;
+
+public class pratice {
+
+	public static void main(String[] args) {
+		int i;
+		
+		for (i=1; 1<=100)  System.out.println(i); 
+	}
+
+}

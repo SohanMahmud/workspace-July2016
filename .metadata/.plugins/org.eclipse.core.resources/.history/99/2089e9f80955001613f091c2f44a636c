@@ -1,0 +1,22 @@
+package fortuneTeller;
+
+import java.util.Scanner;
+
+public class RunCalc {
+
+	public static void main(String[] args) {
+		Scanner num = new Scanner (System.in);
+		
+		Calculator value = new Calculator();
+		int total1 = value.Calculate(num.nextInt(), num.nextInt());
+		System.out.println("Your total is: " +total1);
+		int total2 = value.Calculate(num.nextInt(), num.nextInt(), num.nextInt());
+		System.out.println("Your total is: " +total2);
+		int total3 = value.Calculate(num.nextInt(), num.nextInt(), num.nextInt(), num.nextInt());
+		System.out.println("Your total is: "+total3);
+		int total4 = value.Calculate(num.nextInt(), num.nextInt(), num.nextInt(), num.nextInt(), num.nextInt());
+		System.out.println("Your total is: "+total4);
+		
+	}
+
+}

@@ -1,0 +1,22 @@
+package fortuneTeller;
+
+public class Calculator {
+	
+	public int TwoInt(int a, int b){
+		int total = a + b;
+		return total;
+	}
+	public int TwoInt(int a, int b){
+		int total = a - b;
+		return total;
+	}
+	
+	public int TwoInt(int a, int b){
+		int total = a*b;
+		return total;
+	}
+	public int TwoInt(int a, int b){
+		int total = a/b;
+		return total;
+}
+}

@@ -1,0 +1,22 @@
+package myJavaApp;
+
+import java.util.Scanner;
+
+public class PrintMsg {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner (System.in);
+		System.out.println("Print your custom message as many times as you want!");
+		System.out.println("\nEnter your message");
+		String message = sc.nextLine();
+		System.out.println("Now enter an integer for how many times you want your message to print");
+		int num1 = sc.nextInt();
+		int num2 = 0;
+		
+		do{
+			System.out.println("this is second week of course");
+			num1++;
+	} while (num1>num2); 
+	}
+
+}

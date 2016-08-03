@@ -1,0 +1,22 @@
+package myJavaApp;
+
+import java.util.Scanner;
+
+public class ListNumbers {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner (System.in);
+		Scanner sc2 = new Scanner (System.in);
+		Scanner sc3 = new Scanner (System.in);
+		System.out.println("Enter an integer number to start with, then enter a limit. ");
+		int num1 = sc.nextInt();
+		int num2 = sc2.nextInt();
+		int num3 = sc3.nextInt();
+		for(int i = num1; i<= num2; i = i + num3){
+			System.out.println(i);
+		
+		
+			}
+	}
+
+}

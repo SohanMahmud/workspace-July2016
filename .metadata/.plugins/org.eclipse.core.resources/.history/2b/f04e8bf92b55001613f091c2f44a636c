@@ -1,0 +1,22 @@
+package myJavaApp;
+
+public class Calendar {
+
+	
+	public String getWeekDay(String range){
+		String letterGrade = " ";
+		switch(range){
+		
+		case "91-100": letterGrade = "A"; break;
+		case "81-90": letterGrade = " B+";break;
+		case "71-80": letterGrade = "B";break;
+		case "61-70": letterGrade = "C+";break;
+		case "51-60": letterGrade = "C";break;
+		case "41-50": letterGrade = "D";break;
+		case "0-40": letterGrade = "F";break;
+		default: letterGrade = "not a valid range"; break;
+		
+		}
+		return letterGrade;
+		}
+}
